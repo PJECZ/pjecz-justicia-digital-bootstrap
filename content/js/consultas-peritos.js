@@ -63,6 +63,7 @@ document.addEventListener("DOMContentLoaded", function() {
         { data: "telefono_fijo", width: "auto" },
         { data: "telefono_celular", width: "auto" },
         { data: "email", width: "auto" },
+        { data: "notas", width: "auto" }
       ],
       language: {
         lengthMenu: "Mostrar _MENU_",
