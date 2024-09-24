@@ -24,13 +24,14 @@ document.addEventListener("DOMContentLoaded", function() {
   async function consultarRepsvm(nombre, distritoClave) {
     repsvmTableSpinner.style.display = "block";
     await esperar(1000); // Esperar 1 segundo
-    if (nombre == null) {
-      nombre = "";
+    let encabezado = "Personas";
+    if (nombre != "") {
+      encabezado = encabezado + " con nombre " + nombre;
     }
-    if (distritoClave == null) {
-      distritoClave = "";
+    if (distritoClave != "") {
+      encabezado = encabezado + " con clave del distrito " + distritoClave;
     }
-    repsvmTableTitle.innerHTML = "Con nombre " + nombre + " con clave del distrtito " + distritoClave;
+    redamTableTitle.innerHTML = encabezado;
     $("#repsvmTable").DataTable({
       lengthChange: false,
       ordering: false,

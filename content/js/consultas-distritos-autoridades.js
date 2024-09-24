@@ -57,7 +57,7 @@ async function consultarDistritos(conNotarias = false) {
     .then((data) => {
       // Si la respuesta es exitosa, agregarlos
       if (data.success === true) {
-        data.result.items.forEach((item) => {
+        data.items.forEach((item) => {
           let thisLink = document.createElement("a");
           thisLink.textContent = item.nombre_corto;
           thisLink.addEventListener("click", (thisEvent) => {
@@ -98,7 +98,7 @@ async function consultarAutoridades(distritoClave, conNotarias = false) {
     .then((data) => {
       // Si la respuesta es exitosa, agregarlos
       if (data.success === true) {
-        data.result.items.forEach((item) => {
+        data.items.forEach((item) => {
           let thisLink = document.createElement("a");
           thisLink.textContent = item.descripcion_corta;
           thisLink.addEventListener("click", (thisEvent) => {

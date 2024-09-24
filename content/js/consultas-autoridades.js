@@ -42,7 +42,7 @@ async function consultarAutoridades() {
     .then((data) => {
       // Si la respuesta es exitosa, agregarlos como opciones al select
       if (data.success === true) {
-        data.result.items.forEach((item) => {
+        data.items.forEach((item) => {
           let thisLink = document.createElement("a");
           thisLink.textContent = item.descripcion_corta;
           thisLink.addEventListener("click", (thisEvent) => {

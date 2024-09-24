@@ -24,13 +24,14 @@ document.addEventListener("DOMContentLoaded", function() {
   async function consultarRedam(nombre, distritoClave) {
     redamTableSpinner.style.display = "block";
     await esperar(1000); // Esperar 1 segundo
-    if (nombre == null) {
-      nombre = "";
+    let encabezado = "Personas";
+    if (nombre != "") {
+      encabezado = encabezado + " con nombre " + nombre;
     }
-    if (distritoClave == null) {
-      distritoClave = "";
+    if (distritoClave != "") {
+      encabezado = encabezado + " con clave del distrito " + distritoClave;
     }
-    redamTableTitle.innerHTML = "Con nombre " + nombre + " con clave del distrtito " + distritoClave;;
+    redamTableTitle.innerHTML = encabezado;
     $("#redamTable").DataTable({
       lengthChange: false,
       ordering: false,
