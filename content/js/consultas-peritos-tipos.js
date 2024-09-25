@@ -25,7 +25,7 @@ async function consultarTiposDePeritos() {
         allOption.text = "Todos los Tipos de Peritos";
         tipoDePeritoSelect.appendChild(allOption);
         // Agregar el resto de los distritos
-        data.result.items.forEach((item) => {
+        data.items.forEach((item) => {
           let thisOption = document.createElement("option");
           thisOption.value = item.id;
           thisOption.text = item.nombre;

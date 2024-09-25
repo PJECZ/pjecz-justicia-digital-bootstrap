@@ -39,7 +39,7 @@ async function consultarDistritos() {
         allOption.text = "Todos los Distritos";
         distritoSelect.appendChild(allOption);
         // Agregar el resto de los distritos
-        data.result.items.forEach((item) => {
+        data.items.forEach((item) => {
           let thisOption = document.createElement("option");
           thisOption.value = item.clave;
           thisOption.text = item.nombre_corto;

@@ -10,11 +10,11 @@ let apiUrlPrometeo;
 
 switch (window.location.hostname) {
   case "localhost":
-    apiUrl = "http://localhost:8001/v3";
+    apiUrl = "http://localhost:8000/v3";
     apiUrlPrometeo = "http://localhost:8004/v4";
     break;
   case "127.0.0.1":
-    apiUrl = "http://127.0.0.1:8001/v3";
+    apiUrl = "http://127.0.0.1:8000/v3";
     apiUrlPrometeo = "http://127.0.0.1:8004/v4" ;
     break;
   default:
