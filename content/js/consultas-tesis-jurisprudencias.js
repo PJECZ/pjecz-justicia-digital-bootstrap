@@ -74,8 +74,8 @@ async function mostrarTesisJurisprudencia(tesisJurisprudenciaId) {
       $("#detalleTituloTJ").text(datos.titulo);
       $("#detalleRegistro").text(datos.id);
       $("#detalleSubtitulo").text(datos.subtitulo);
-      $("#detalleDistrito").text(datos.distrito);
-      $("#detalleAutoridad").text(datos.autoridad);
+      $("#detalleDistrito").text(datos.distrito_nombre);
+      $("#detalleAutoridad").text(datos.autoridad_descripcion);
       $("#detalleTipo").text(datos.tipo);
       $("#detalleClaveControl").text(datos.clave_control);
       $("#detalleClase").text(datos.clase);
@@ -84,8 +84,8 @@ async function mostrarTesisJurisprudencia(tesisJurisprudenciaId) {
       $("#detallePrecedentes").text(datos.precedentes);
       $("#detalleVotacion").text(datos.votacion);
       $("#detalleVotosParticulares").text(datos.votos_particulares);
-      $("#detalleEpoca").text(datos.epoca);
-      $("#detalleMateria").text(datos.materia);
+      $("#detalleEpoca").text(datos.epoca_nombre);
+      $("#detalleMateria").text(datos.materia_nombre);
       $("#detalleAprobacionFecha").text(datos.aprobacion_fecha);
       $("#detallePublicacionTiempo").text(datos.publicacion_tiempo);
       $("#detalleAplicacionTiempo").text(datos.aplicacion_tiempo);
