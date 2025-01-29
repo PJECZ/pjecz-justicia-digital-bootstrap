@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "pjecz-gob-mx-consultas-pelican"
-version = "2.0.0"
+version = "2.1.0"
 description = "Sitio web para consultar información hecho con bootstrap y datatables."
 authors = ["Guillermo Valdes <guillermo@movimientolibre.com>"]
 license = "AGPL3"
@@ -9,19 +9,12 @@ package-mode = false
 
 [tool.poetry.dependencies]
 python = "^3.11"
-pelican = "^4.10.0"
-markdown = "^3.7"
-pelican-sitemap = "^1.1.0"
 ghp-import = "^2.1.0"
+markdown = "^3.7"
+pelican = "^4.11.0"
+pelican-sitemap = "^1.2.0"
 
-
-[tool.poetry.group.dev.dependencies]
-pylint = "^3.3.1"
-black = "^24.8.0"
 
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
-
-[tool.black]
-line-length = 128

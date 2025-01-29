@@ -3,12 +3,12 @@ Pelican development configuration file
 """
 
 # Tema
-THEME = "themes/pjecz-2020-10"
+THEME = "themes/pjecz-2025-01"
 
 # Nombre de esta rama hecha con Pelican que se usa en el title de la pagina
 SITENAME = "Consultas - Poder Judicial del Estado de Coahuila de Zaragoza"
 
-# URL base que se usa para enlazar los archivos javascript, en DESARROLLO es localhost
+# URL base para desarrollador (porque la API va a usar el puerto 8000)
 SITEURL = "http://localhost:5000"
 
 # URL base que se usa el menu principal y en los enlaces del pie de pagina
@@ -54,5 +54,5 @@ DIRECT_TEMPLATES = ["index"]
 PLUGIN_PATHS = ["plugins"]
 PLUGINS = ["pelican_javascript"]
 
-# puerto para accesar a las API
+# Puerto 5000 para desarrollador (porque la API va a usar el puerto 8000)
 PORT = 5000
